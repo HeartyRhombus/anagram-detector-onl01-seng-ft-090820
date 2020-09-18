@@ -11,9 +11,10 @@ class Anagram
   def match(array)
     array.each do |word|
       word = word.split(" ")
-      letters = word.split("")
-      letters
-
+      word.each do |letters|
+        letters = letters.split("")
+      end
+      word
     end
 
   end
