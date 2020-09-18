@@ -12,8 +12,9 @@ class Anagram
     word = @word.split("").sort
     array.collect do |word|
       letters = word.split("").sort
+
     end
-    letters.match?(word)
+
 
   end
 
