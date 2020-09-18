@@ -9,24 +9,9 @@ class Anagram
   end
 
   def match(array)
-    # word = @word.split("").sort.join
-    # sorted_letters = array.collect do |word|
-    #   letters = word.split("").sort.join
-    #   if letters.include?(word)
-    #     @word
-    #   else
-    #     []
-    #   end
-      sorted_words = array.each_with_object(Hash.new []) do |letters, word|
-        word[letters.chars.sort] += [letters]
-      end
-
-      sorted_words.each do |letters, word|
-        if word.length == @word.length
-          sorted_words.values.join(", ")
-        end
-      end
-
+    array.select do |matching_word|
+      (@word.split("").sort) == (matching_word.split("").sort)
+    end
   end
 
 end
