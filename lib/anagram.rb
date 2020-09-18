@@ -21,7 +21,7 @@ class Anagram
         word[letters.chars.sort] += [letters]
       end
       sorted_words.each do |letters, matching_word|
-        matching_word.join(", ")
+        matching_word.values.join(", ")
     end
 
 
