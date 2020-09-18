@@ -12,7 +12,7 @@ class Anagram
     array.each do |word|
       word.split("").sort
       case word
-      when array.include?(word).any?
+      when array.include?(word)
         word
       else
         []
