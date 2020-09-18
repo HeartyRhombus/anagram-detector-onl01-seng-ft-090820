@@ -9,8 +9,7 @@ class Anagram
   end
 
   def match(array)
-    matches = self.new(word)
-    matches.match(%w(word))
+    matches = self.new
   end
 
 end
