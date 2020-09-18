@@ -12,10 +12,7 @@ class Anagram
     word = @word.split("").sort.join
     sorted_letters = array.collect do |word|
       letters = word.split("").sort.join
-      if word.length == letters.length
-        word.all?(letters)
-        letters
-      end
+
     end
 
 
