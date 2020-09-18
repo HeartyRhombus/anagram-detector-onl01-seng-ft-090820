@@ -16,6 +16,7 @@ class Anagram
         @word
       else
         []
+      end
     end
 
 
