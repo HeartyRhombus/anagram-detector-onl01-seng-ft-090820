@@ -10,7 +10,9 @@ class Anagram
 
   def match(array)
     array.each do |word|
-      word.split("").sort
+      letters = word.split("")
+      letters.sort
+      letters
 
     end
 
