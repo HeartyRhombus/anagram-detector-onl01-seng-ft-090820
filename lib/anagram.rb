@@ -20,8 +20,7 @@ class Anagram
       sorted_words = array.each_with_object(Hash.new []) do |letters, word|
         word[letters.chars.sort] += [letters]
       end
-      sorted_words.each do |letters, matching_word|
-        matching_word.values.join(", ")
+
     end
 
 
