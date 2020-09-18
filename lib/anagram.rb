@@ -15,6 +15,7 @@ class Anagram
       if word.length == letters.length
         word.all?(letters)
         letters
+      end
     end
 
 
