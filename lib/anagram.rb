@@ -21,8 +21,11 @@ class Anagram
         word[letters.chars.sort] += [letters]
       end
 
-
-
+      sorted_words.each do |letters, word|
+        if word.length == @word.length
+          sorted_words.values.join(", ")
+        end
+      end
 
   end
 
