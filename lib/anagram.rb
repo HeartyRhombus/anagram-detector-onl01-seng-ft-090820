@@ -11,12 +11,7 @@ class Anagram
   def match(array)
     array.each do |word|
       word.split("").sort
-      case word
-      when array.include?(word)
-        word
-      else
-        []
-      end
+
     end
 
   end
