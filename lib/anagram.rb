@@ -21,7 +21,7 @@ class Anagram
         word[letters.chars.sort] += [letters]
       end
 
-    end
+
 
 
   end
